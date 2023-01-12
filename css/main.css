@@ -1,3 +1,39 @@
+/* barlow-600 - latin */
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+        url('../fonts/barlow-v12-latin-600.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/barlow-v12-latin-600.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* fraunces-700 - latin */
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/fraunces-v26-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/fraunces-v26-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* fraunces-900 - latin */
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+        url('../fonts/fraunces-v26-latin-900.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/fraunces-v26-latin-900.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 /* ROOT */
 :root {
     /* --header-bg-color: #fff; */
@@ -22,7 +58,7 @@ body {
     flex-direction: column;
     height: 100%;
     margin: 0;
-    font-family: "Arial", sans-serif;
+    font-family: "Barlow", "Arial", sans-serif;
     font-weight: 400;
     background-color: #fff;
 }
@@ -109,7 +145,7 @@ a {
         padding-bottom: 34px;
     }
 
-    .container-fluid{
+    .container-fluid {
         padding-left: 40px;
         padding-right: 40px;
     }
@@ -139,7 +175,7 @@ a {
         color: #fff;
     }
 
-    .site-nav__link:hover{
+    .site-nav__link:hover {
         font-weight: 700;
     }
 
@@ -151,8 +187,8 @@ a {
         color: #24303E;
     }
 
-    .site-nav__item:last-child .site-nav__link:hover{
-        background-color: rgb(255, 255, 255,0.25);
+    .site-nav__item:last-child .site-nav__link:hover {
+        background-color: rgb(255, 255, 255, 0.25);
         color: #fff;
     }
 
@@ -164,3 +200,66 @@ a {
 /* DESKTOP RESPONSIVE END */
 
 /********** HEADER STYLES END ***********/
+
+/********** MAIN STYLES START ***********/
+
+/* HERO SECTION START */
+
+.hero-section {
+    padding-top: 56px;
+    padding-bottom: 136px;
+    background-color: #4ABDF2;
+    background-image: url(../images/hero-bg-img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+}
+
+.hero-section__title {
+    margin: 0;
+    margin-bottom: 52px;
+    font-family: Fraunces;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 6.25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.hero-section__img {
+    display: block;
+    width: 30px;
+    height: 107px;
+    margin: 0 auto;
+}
+
+/* DESKTOP RESPONSIVE START */
+@media only screen and (min-width:321px) {
+    .hero-section {
+        background-image: url('../images/hero-bg-img.jpg');
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .hero-section {
+        padding-top: 71px;
+        padding-bottom: 331px;
+        background-image: url("../images/hero-bg-img.jpg");
+        background-size: cover;
+    }
+
+    .hero-section__title {
+        margin-bottom: 96px;
+        font-size: 56px;
+        line-height: 69px;
+    }
+
+}
+
+/* DESKTOP RESPONSIVE END */
+
+/* HERO SECTION END */
+/********** MAIN STYLES END ***********/
