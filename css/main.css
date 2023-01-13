@@ -372,7 +372,7 @@ a {
         margin: 0;
     }
 
-    .line{
+    .line {
         transform: translate(-55%);
     }
 
@@ -382,8 +382,8 @@ a {
 
 }
 
-@media only screen and (min-width: 1450px){
-    .product-section__start{
+@media only screen and (min-width: 1450px) {
+    .product-section__start {
         padding: 120px;
     }
 }
@@ -391,5 +391,71 @@ a {
 /* DESKTOP RESPONSIVE END */
 
 /* PRODUCT SECTION END */
+
+/* SERVICES SECTION START */
+.services-section__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.services-card {
+    width: 100%;
+    padding: 398px 24px 59px 24px;
+    text-align: center;
+    color: #24554A;
+    background-image: url('../images/services-card-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services-card:last-child {
+    background-image: url('../images/services-card-2.jpg');
+}
+
+.services-card__title {
+    margin: 0;
+    margin-bottom: 27px;
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: -0.2px;
+}
+
+.services-card__desc {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: -0.114286px;
+}
+
+/* SERVICES SECTION END */
+
+/* DESKTOP RESPONSIVE START */
+@media only screen and (min-width: 1024px) {
+    .services-section__wrapper {
+        flex-direction: row;
+    }
+
+    .services-card{
+        width: 50%;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .services-card{
+        width: 50%;
+        padding-left: 190px;
+        padding-right: 190px;
+    }
+}
+
+
+/* DESKTOP RESPONSIVE END */
+
+
 
 /********** MAIN STYLES END ***********/
