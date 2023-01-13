@@ -573,4 +573,24 @@ a {
 
 /* CLIENTS SECTION END */
 
+/* IMAGES SECTION START */
+.images-section__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.images-section__img {
+    width: 50%;
+    height: auto;
+}
+/* IMAGES SECTION END */
+
+/* REPONSIVE START */
+@media only screen and (min-width:660px) {
+    .images-section__img{
+        width: 25%;
+    }
+}
+/* REPONSIVE END */
+
 /********** MAIN STYLES END ***********/
